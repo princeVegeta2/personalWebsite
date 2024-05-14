@@ -91,12 +91,12 @@ function ApiSection() {
                     <div className="api-description">
                         <p>This API was developed using .NET. It has 1 endpoint in its controller
                             which is responsible for both choosing the language and encrypting/decrypting text.
-                            It uses the <b><a href="https://en.wikipedia.org/wiki/ROT13" target="_blank" className="word-link">ROT13</a></b> cipher
+                            It uses the <b><a href="https://en.wikipedia.org/wiki/ROT13" target="_blank" className="word-link" rel="noopener noreferrer">ROT13</a></b> cipher
                             to encrypt the English text. For the Russian language, it uses a custom made ROT16 cipher,
                             which follows the same principles as ROT13, but without the letter "Ё", since the amount of letters
                             in the alphabet needs to be even for this cipher to work.
                         </p>
-                        <a href="https://github.com/princeVegeta2/CipherAPI-docker-" target="_blank" className="github-link">GitHub</a>
+                        <a href="https://github.com/princeVegeta2/CipherAPI-docker-" target="_blank" className="github-link" rel="noopener noreferrer">GitHub</a>
                     </div>
                     <h2>Encrypt your text</h2>
                     <form className="api-form" onSubmit={handleEncrypt}>
@@ -126,7 +126,7 @@ function ApiSection() {
                             The API can return the current board, return the current player ("X" or "O"), allows the player to make a move, has a Reset method,
                             checks if the game is over and also if the board is full, and lastly returns the winner.
                         </p>
-                        <a href="https://github.com/princeVegeta2/TicTacToeAPI-2.0" target="_blank" className="github-link">GitHub</a>
+                        <a href="https://github.com/princeVegeta2/TicTacToeAPI-2.0" target="_blank" className="github-link" rel="noopener noreferrer">GitHub</a>
                     </div>
                     <div className="tic-tac-toe">
                         <h2>Current Player: {currentPlayer}</h2>

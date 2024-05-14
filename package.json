@@ -1,8 +1,4 @@
 {
-  "scripts": {
-    "build": "CI=false react-scripts build"
-},
-
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,6 +40,4 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
-
-  
 }

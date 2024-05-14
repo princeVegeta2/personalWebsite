@@ -6,7 +6,7 @@ import useCustomInView from '../hooks/useCustomInView';
 function AboutSection() {
     const { ref, inView } = useCustomInView();
 
-    {/*Expanding logic */ }
+    // Expanding logic
     const [expanded, setExpanded] = useState({
         journey: false, skills: false, moreSkills: false,
     });
@@ -28,6 +28,7 @@ function AboutSection() {
                     </p>
                 </div>
             </div>
+
             <div className="about-subsection">
                 <div className={`biography fade-in ${inView ? 'fade-in-active' : ''}`}>
                     <h3>My Coding Journey</h3>
@@ -74,14 +75,12 @@ function AboutSection() {
                                         <li>SOLID</li>
                                     </ul>
                                 </div>
-
                             </div>
                         </p>
                         <button onClick={() => toggleExpanded('skills')} className="expand-button">&#9660;</button>
                     </div>
                 </div>
             </div>
-
 
             <div className="about-subsection">
                 <div className={`biography fade-in ${inView ? 'fade-in-active' : ''}`}>

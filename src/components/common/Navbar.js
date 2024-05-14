@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import '../../assets/styles/Navbar.css';
 
 function Navbar() {
@@ -7,9 +7,21 @@ function Navbar() {
     const [showDropdown, setShowDropdown] = useState(false);
     const tabsRef = useRef([]);
 
+    const updateSliderPosition = useCallback((tabId = activeTab) => {
+        const index = tabsRef.current.findIndex(ref => `#${ref.id}` === tabId);
+        const activeEl = tabsRef.current[index];
+        if (activeEl) {
+            setSliderStyle({
+                width: `${activeEl.offsetWidth}px`,
+                left: `${activeEl.offsetLeft}px`,
+                opacity: 1  // Ensure the slider is visible
+            });
+        }
+    }, [activeTab]);
+
     useEffect(() => {
         updateSliderPosition();
-    }, [activeTab]);
+    }, [activeTab, updateSliderPosition]);
 
     const onTabClick = (event, tabId) => {
         event.preventDefault();
@@ -44,18 +56,6 @@ function Navbar() {
             setShowDropdown(!showDropdown);
         } else {
             setShowDropdown(false);
-        }
-    };
-
-    const updateSliderPosition = (tabId = activeTab) => {
-        const index = tabsRef.current.findIndex(ref => `#${ref.id}` === tabId);
-        const activeEl = tabsRef.current[index];
-        if (activeEl) {
-            setSliderStyle({
-                width: `${activeEl.offsetWidth}px`,
-                left: `${activeEl.offsetLeft}px`,
-                opacity: 1  
-            });
         }
     };
 
