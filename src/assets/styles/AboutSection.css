@@ -1,0 +1,147 @@
+.section.alternate {
+    background: #f8f8f8;
+    color: #333;
+    padding: 50px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-content, .about-subsection {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about-content h2, .about-subsection h3 {
+    font-size: 24px;
+    color: #222;
+}
+
+.about-content p, .about-subsection p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-subsection {
+    margin-top: 50px; /* Adds significant space above this section */
+    background: #fff; /* Optional: different background to highlight this section */
+    padding: 20px;
+    border-radius: 8px; /* Optional: rounded corners for card-like effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
+
+.biography p {
+    max-height: 50px; /* Adjust this based on the content height you want visible initially */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+    opacity: 1; /* Start with content visible but clipped */
+}
+
+.biography p.expanded {
+    max-height: 1000px; /* Large enough to show all content */
+    opacity: 1;
+}
+
+
+
+.expand-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust size as needed */
+    color: #333;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.biography p.expanded + .expand-button {
+    transform: rotate(180deg); /* Flip arrow when expanded */
+}
+
+/* Adjust styles for responsiveness and hover effects */
+.expand-button:hover {
+    color: #666;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items vertically in the center */
+}
+
+.expand-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust size as needed */
+    color: #333;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+/* CORE SKILLS */
+.skill-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skill-set {
+    display: flex;
+    flex-direction: column; /* Ensures that h4 and ul are stacked vertically */
+}
+
+.skill-set h4 {
+    margin-bottom: 10px; /* Space between the header and the list */
+}
+
+.skill-set ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.skill-set li {
+    padding: 5px 0; /* Adds vertical padding for each list item */
+}
+
+
+/*FADE IN ANIMAION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content, .journey-section {
+        padding: 20px 0;
+    }
+}

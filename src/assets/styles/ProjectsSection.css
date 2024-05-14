@@ -1,0 +1,105 @@
+.projects-section {
+    padding: 20px;
+    background-color: #f8f8f8; 
+}
+
+.projects-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 5rem;
+}
+
+.projects-divider {
+    background-color: black;
+    height: 3px;
+    width: 50%; 
+    margin-top: 1rem;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 20px; 
+}
+
+
+.project-card {
+    width: 30%; /* Adjust based on your preference */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    cursor: pointer; /* Changes the cursor to indicate the item is interactable */
+}
+
+/* POP-OUT effect */
+.project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-info {
+    padding: 15px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.project-info h3 {
+    color: #333;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.project-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-info li {
+    background: #e4e4e4;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.project-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.project-links a:hover {
+    background-color: rgb(46, 43, 43);
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%; 
+    }
+
+    .projects-divider {
+        width: 90%; 
+    }
+}
