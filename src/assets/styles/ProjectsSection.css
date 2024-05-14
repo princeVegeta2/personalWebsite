@@ -28,13 +28,13 @@
 
 
 .project-card {
-    width: 30%; /* Adjust based on your preference */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+    width: 30%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-    cursor: pointer; /* Changes the cursor to indicate the item is interactable */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
 }
 
 /* POP-OUT effect */

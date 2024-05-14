@@ -4,8 +4,8 @@
     background-position: left center;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align text to the right */
-    color: #000; /* White text */
+    justify-content: flex-end; 
+    color: #000; 
     position: relative;
     text-align: right;
     padding: 0 10%;
@@ -28,7 +28,7 @@
 }
 
 .cta-button {
-    background-color: #000; /* Example blue */
+    background-color: #000; 
     border: none;
     padding: 10px 20px;
     color: white;

@@ -16,7 +16,7 @@ function FooterSection() {
                 </div>
 
                 <div className="row">
-                    Copyright © 2024 All rights reserved 
+                    Copyright © 2024 All rights reserved
                 </div>
             </div>
         </footer>

@@ -54,7 +54,7 @@ function Navbar() {
             setSliderStyle({
                 width: `${activeEl.offsetWidth}px`,
                 left: `${activeEl.offsetLeft}px`,
-                opacity: 1  // Ensure the slider is visible
+                opacity: 1  
             });
         }
     };

@@ -64,15 +64,15 @@ letter-spacing: 0.1rem;
 .et-hero-tab-slider {
     position: absolute;
     bottom: 0;
-    height: 4px; /* Example height */
-    background-color: #66B1F1; /* Example color */
-    transition: all 0.3s ease; /* Smooth transition for moving and resizing */
+    height: 4px; 
+    background-color: #66B1F1; 
+    transition: all 0.3s ease; 
 }
 
 .dropdown-menu {
     position: absolute;
-    top: -60px; /* Adjust based on your navbar height */
-    left: calc(70% - 75px); /* Adjust based on your navbar layout */
+    top: -60px; 
+    left: calc(70% - 75px); 
     width: 150px;
     background-color: white;
     border: 1px solid #ccc;

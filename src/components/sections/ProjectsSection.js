@@ -43,8 +43,8 @@ function ProjectsSection() {
     return (
         <section className="projects-section" id="projects-section">
             <div className="projects-title">
-             <h2>My Projects</h2>
-             <div className="projects-divider"></div>
+                <h2>My Projects</h2>
+                <div className="projects-divider"></div>
             </div>
             <div className="projects-grid">
                 {projects.map((project, index) => (
