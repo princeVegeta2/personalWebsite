@@ -64,7 +64,7 @@ function AboutSection() {
                                     <ul>
                                         <li>.NET with EntityFramework</li>
                                         <li>MSSQL and PostgreSQL</li>
-                                        <li>API development, integration and hosting</li>
+                                        <li>API development</li>
                                     </ul>
                                 </div>
                                 <div className="skill-set">

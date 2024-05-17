@@ -28,7 +28,7 @@ function Navbar() {
         setActiveTab(tabId);
         updateSliderPosition(tabId);
         // Scroll logic
-        if (tabId === '#tab-about-me') {
+        if (tabId === '#tab-about') {
             const section = document.getElementById('about-section');
             if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
@@ -64,7 +64,7 @@ function Navbar() {
             <h1>Seymur Uvarov</h1>
             <h3>Full-Stack developer</h3>
             <div className="et-hero-tabs-container">
-                {['about-me', 'projects', 'api', 'resume', 'contact'].map((tab, index) => (
+                {['about', 'projects', 'api', 'resume', 'contact'].map((tab, index) => (
                     <a key={tab}
                         id={`tab-${tab}`}
                         ref={el => tabsRef.current[index] = el}

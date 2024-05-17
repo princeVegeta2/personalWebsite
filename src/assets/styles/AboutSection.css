@@ -2,13 +2,14 @@
     background: #f8f8f8;
     color: #333;
     padding: 50px 20px;
+    max-width: 100%;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -144,4 +145,5 @@
     .about-content, .journey-section {
         padding: 20px 0;
     }
+
 }
