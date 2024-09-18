@@ -4,7 +4,7 @@ import ProjectCard from '../common//ProjectCard';
 import TrackerScreenshot from '../../assets/images/tracker-screenshot.png';
 import DataEntryScreenshot from '../../assets/images/data-entry-screenshot.png';
 import FlappyScreenshot from '../../assets/images/flappy-screenshot.png';
-import SalesTrends from '../../assets/images/sales_trends.png';
+import WebBuilder from '../../assets/images/webBuilder.png';
 
 function ProjectsSection() {
     const projects = [
@@ -31,11 +31,11 @@ function ProjectsSection() {
             githubLink: "https://github.com/princeVegeta2/flappyAI"
         },
         {
-            name: "Sales analysis",
-            description: "A simple analysis of a sales dataset with Pandas visualized using Matplotlib. ",
-            technologies: ["Python", "Pandas", "Matplotlib"],
-            image: SalesTrends,
-            githubLink: "https://github.com/princeVegeta2/salesAnalysis"
+            name: "AI Web Builder",
+            description: "Showcases all of my skill in Fullstack development so far. Uses Anthropic Claude API to build REACT websites in a no-code environment. Comprehensive .NET+PostgreSQL on AWS backend.",
+            technologies: ["React", ".NET", "AWS", "AI"],
+            image: WebBuilder,
+            liveDemo: "https://web-builder-alpha.netlify.app/"
         }
         // Add more projects here
     ];
