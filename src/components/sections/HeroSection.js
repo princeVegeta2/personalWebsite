@@ -11,7 +11,7 @@ function HeroSection() {
             <div ref={ref} className={`hero-content ${inView ? 'slide-in' : ''}`}>
                 <h1>Hello, I’m Seymur</h1>
                 <p>I am a passionate Fullstack Developer with experience in building applications with React, Next.js, .NET and more.</p>
-                <a href="https://www.dropbox.com/scl/fi/kylelh76onlpb5f4sf9so/Resume-2.pdf?rlkey=tu618zn4kd0waw3aj4wrig0oo&st=4ldm6ep3&dl=1"><button className="cta-button" id="download-button">Download my Resume</button></a>
+                <a href="https://www.dropbox.com/scl/fi/ynxoir6cfiagv48e44z9p/Resume.pdf?rlkey=wxg6jja4p6kc2g4z86wam0nwj&st=6cwovk3h&dl=1"><button className="cta-button" id="download-button">Download my Resume</button></a>
             </div>
         </section>
     );

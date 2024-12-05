@@ -9,7 +9,7 @@ function FooterSection() {
                     <ul>
                         <li><a href="#projects-section">Projects</a></li>
                         <li><a href="#api-section">APIs</a></li>
-                        <li><a href="https://www.dropbox.com/scl/fi/kylelh76onlpb5f4sf9so/Resume-2.pdf?rlkey=tu618zn4kd0waw3aj4wrig0oo&st=4ldm6ep3&dl=1" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li><a href="https://www.dropbox.com/scl/fi/ynxoir6cfiagv48e44z9p/Resume.pdf?rlkey=wxg6jja4p6kc2g4z86wam0nwj&st=6cwovk3h&dl=1" target="_blank" rel="noopener noreferrer">Resume</a></li>
                         <li><a href="#about-section">About me</a></li>
                         <li><a href="#hero-section">Back to top</a></li>
                     </ul>

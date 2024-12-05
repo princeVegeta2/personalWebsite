@@ -40,11 +40,8 @@ function Navbar() {
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         }
-        if (tabId === '#tab-api') {
-            const section = document.getElementById('api-section');
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
+        if (tabId === '#tab-github') {
+            window.open('https://github.com/princeVegeta2/', '_blank');
         }
         if (tabId === '#tab-contact') {
             const section = document.getElementById('contact-section');
@@ -64,7 +61,7 @@ function Navbar() {
             <h1>Seymur Uvarov</h1>
             <h3>Full-Stack developer</h3>
             <div className="et-hero-tabs-container">
-                {['about', 'projects', 'api', 'resume', 'contact'].map((tab, index) => (
+                {['about', 'projects', 'github', 'resume', 'contact'].map((tab, index) => (
                     <a key={tab}
                         id={`tab-${tab}`}
                         ref={el => tabsRef.current[index] = el}
@@ -77,7 +74,7 @@ function Navbar() {
                 <span className="et-hero-tab-slider" style={sliderStyle}></span>
                 {showDropdown && (
                     <div className="dropdown-menu">
-                        <a href="https://www.dropbox.com/scl/fi/kylelh76onlpb5f4sf9so/Resume-2.pdf?rlkey=tu618zn4kd0waw3aj4wrig0oo&st=4ldm6ep3&dl=1" target="_blank" rel="noopener noreferrer" className="dropdown-item">Download Resume</a>
+                        <a href="https://www.dropbox.com/scl/fi/ynxoir6cfiagv48e44z9p/Resume.pdf?rlkey=wxg6jja4p6kc2g4z86wam0nwj&st=6cwovk3h&dl=1" target="_blank" rel="noopener noreferrer" className="dropdown-item">Download Resume</a>
                     </div>
                 )}
             </div>
