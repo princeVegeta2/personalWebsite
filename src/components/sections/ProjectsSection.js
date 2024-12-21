@@ -35,7 +35,7 @@ function ProjectsSection() {
             description: "Showcases all of my skill in Fullstack development so far. Uses Anthropic Claude API to build REACT websites in a no-code environment. Comprehensive .NET+PostgreSQL on AWS backend.",
             technologies: ["React", ".NET", "AWS", "AI"],
             image: WebBuilder,
-            liveDemo: "https://web-builder-alpha.netlify.app/"
+            githubLink: "https://github.com/princeVegeta2/ai-builder-server-dotnet"
         }
         // Add more projects here
     ];
