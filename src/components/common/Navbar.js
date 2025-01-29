@@ -74,7 +74,7 @@ function Navbar() {
                 <span className="et-hero-tab-slider" style={sliderStyle}></span>
                 {showDropdown && (
                     <div className="dropdown-menu">
-                        <a href="https://www.dropbox.com/scl/fi/ynxoir6cfiagv48e44z9p/Resume.pdf?rlkey=wxg6jja4p6kc2g4z86wam0nwj&st=6cwovk3h&dl=1" target="_blank" rel="noopener noreferrer" className="dropdown-item">Download Resume</a>
+                        <a href="https://www.dropbox.com/scl/fi/916f2l4nwta03brglb7zp/Res.pdf?rlkey=46cpcijbr3wgg7k4kthyrjoa6&st=xnx6i80y&dl=1" target="_blank" rel="noopener noreferrer" className="dropdown-item">Download Resume</a>
                     </div>
                 )}
             </div>
