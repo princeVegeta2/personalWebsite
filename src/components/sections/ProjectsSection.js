@@ -5,12 +5,28 @@ import TrackerScreenshot from '../../assets/images/tracker-screenshot.png';
 import DataEntryScreenshot from '../../assets/images/data-entry-screenshot.png';
 import FlappyScreenshot from '../../assets/images/flappy-screenshot.png';
 import WebBuilder from '../../assets/images/webBuilder.png';
+import PaperScreenshot from '../../assets/images/paper.png';
+import AiPongScreenshot from '../../assets/images/aiPong.png';
 
 function ProjectsSection() {
     const projects = [
         {
+            name: "Paper Trading Platform",
+            description: "A ReactTS + NestJS full stack project hosted on AWS which allows user to engage in paper-trading on the Solana blockchain. Tracks accurate statistics and solves a real problem.",
+            technologies: ["React", "TypeScript", "PostgreSQL", "NestJS", "AWS"],
+            image:PaperScreenshot,
+            liveDemo: "https://prypto.netlify.app/"
+        },
+        {
+            name: "Pong AI",
+            description: "A Pygame pong clone which enables a human to play normally, or allows to train an AI model and then use it to play the game.",
+            technologies: ["Python", "Pygame", "PyTorch", "AI", "ML"],
+            image: AiPongScreenshot,
+            githubLink: "https://github.com/princeVegeta2/ai-pong"
+        },
+        {
             name: "Bitcoin Price Tracker",
-            description: "A NextJS website connected to ElephantSQL database and CoindeskAPI to fetch BTC prices to save and display them.",
+            description: "A NextJS website connected to ElephantSQL(this DB provider is closing their business, the website might not work anymore) database and CoindeskAPI to fetch BTC prices to save and display them.",
             technologies: ["Next.js", "PostgreSQL", "Docker", "CoindeskAPI"],
             image: TrackerScreenshot,
             githubLink: "https://github.com/princeVegeta2/bitcoinPriceTracker",
