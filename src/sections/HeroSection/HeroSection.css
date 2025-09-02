@@ -1,0 +1,146 @@
+@import "../../variables.css";
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-text);
+  padding: 100px 200px;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Subtle gradient overlay for readability on busy images */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 6, 23, 0.35) 0%,
+    rgba(2, 6, 23, 0.15) 40%,
+    rgba(2, 6, 23, 0.45) 100%
+  );
+  pointer-events: none;
+}
+
+/* Content wrapper */
+.hero-section-container {
+  position: relative; /* above overlay */
+  z-index: 1;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-c-1 {
+  height: 30vh;
+}
+
+/* Two-column feel on desktop (left spacer, right text) */
+.hero-c-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.hero-c-2-r-1 {
+  width: 100vw; /* pushes text to the right on large screens */
+}
+
+.hero-c-2-r-2 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  margin-right: -150px; /* intentional offset for wide look */
+  gap: 14px;
+}
+
+/* Responsive, crisp type */
+.hero-c-2-r-2 h1 {
+  font-size: clamp(32px, 4.5vw, 60px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.25);
+  margin: 0;
+}
+
+.hero-c-2-r-2 h5 {
+  font-size: clamp(16px, 2vw, 26px);
+  font-weight: 500;
+  line-height: 1.35;
+  color: #e5e7eb;
+  max-width: 720px;
+  margin: 0;
+}
+
+/* CTA */
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  border: none;
+  padding: 12px 18px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.12s ease;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.3);
+}
+.cta-button:hover { background-color: rgb(46, 43, 43); }
+.cta-button:active { transform: translateY(1px); }
+
+/* ---------- Tablet adjustments ---------- */
+@media (max-width: 1024px) {
+  .hero-section { padding: 80px 64px; }
+  .hero-c-1 { height: 22vh; }
+  .hero-c-2-r-2 { margin-right: -60px; }
+}
+
+/* ---------- Mobile layout ---------- */
+@media (max-width: 800px) {
+  .hero-section {
+    padding: 72px 20px 32px;
+    align-items: center;
+  }
+
+  .hero-c-1 { height: 12vh; }
+
+  .hero-c-2 {
+    flex-direction: column;   /* stack */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-c-2-r-1 { display: none; } /* remove spacer column */
+
+  .hero-c-2-r-2 {
+    width: 100%;
+    margin-right: 0;          /* remove negative offset */
+    align-items: center;      /* center text & button */
+    text-align: center;
+    gap: 12px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 18px;
+    border-radius: 10px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+  .hero-section { padding: 64px 16px 28px; }
+  .cta-button { max-width: 100%; }
+}
