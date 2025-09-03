@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./AboutSection.css";
-import profilePhoto from "../../assets/images/profile.png";
 
 type AboutCardProps = {
   title: string;
@@ -57,7 +56,7 @@ const AboutSection: React.FC = () => {
       <div className="about-section-container">
         {/* Intro row */}
         <div className="about-row intro">
-          <img className="about-photo" src={profilePhoto} alt="Profile" />
+
           <div className="about-intro-text">
             <h1>About Me</h1>
             <p>
